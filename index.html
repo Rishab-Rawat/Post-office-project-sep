@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+
+
+
+<div class="app-container">
+    <h1>Pincode Lookup</h1>
+    <form id="pincodeForm">
+      <label for="pincodeInput">Enter Pincode:</label>
+      <input type="text" id="pincodeInput" maxlength="6" placeholder="Enter 6-digit pincode" required>
+      <button type="submit">Lookup</button>
+    </form>
+    
+    <div id="loader" class="loader hidden"></div>
+    
+    <div id="error-message" class="error-message hidden"></div>
+    
+    <div id="results-container" class="results-container hidden">
+      <h2>Results</h2>
+      <input type="text" id="filterInput" placeholder="Filter by Post Office Name">
+      <ul id="resultsList"></ul>
+      <p id="noResultsMessage" class="hidden">Couldn't find the postal data you're looking for…</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+  
